@@ -1,0 +1,39 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Flutter-Repasse-edge",
+			"type": "dart",
+			"request": "launch",
+			"program": "lib\\main.dart",
+			"args": [
+				"-d",
+				"edge",
+				"--web-hostname",
+				"192.168.5.52",
+				"--web-port",
+				"7223"
+			]
+		},
+		{
+			"name": "Flutter-Repasse-chrome",
+			"type": "dart",
+			"request": "launch",
+			"program": "lib\\main.dart",
+			"args": [
+				"-d",
+				"chrome",
+				"--web-hostname",
+				"192.168.5.52",
+				"--web-port",
+				"7224"
+			]
+		},
+		{
+			"name": "Flutter-Device",
+			"type": "dart",
+			"request": "launch",
+			"program":  "lib\\main.dart",
+		}
+	]
+}

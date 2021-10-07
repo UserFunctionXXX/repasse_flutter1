@@ -21,13 +21,11 @@ class _RepassePageState extends State<RepassePage> {
       appBar: AppBar(
         title: const Text("Repasse Flutter"),
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Container(
-              height: 200,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Column(
                 children: [
                   Container(
                     height: 50,
@@ -50,10 +48,64 @@ class _RepassePageState extends State<RepassePage> {
                     color: Colors.black,
                   ),
                 ],
+              )
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: 50,
+                width: 50,
+                color: Colors.amber,
               ),
-            ),
-          ],
-        ),
+              Container(
+                height: 50,
+                width: 50,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 50,
+                width: 50,
+                color: Colors.green,
+              ),
+              Container(
+                height: 50,
+                width: 50,
+                color: Colors.black,
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Column(
+                children: [
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.amber,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.black,
+                  ),
+                ],
+              )
+            ],
+          ),
+        ],
       ),
     );
   }
